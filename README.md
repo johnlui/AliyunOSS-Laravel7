@@ -35,7 +35,7 @@ AliyunOSS-Laravel7 是阿里云 OSS 官方 SDK 的 Composer 封装，专供 Lara
 
 ```json
 require: {
-    "johnlui/aliyun-oss": "~3.0"
+    "johnlui/aliyun-oss-laravel7": "~3.0"
 }
 ```
 
@@ -46,7 +46,7 @@ require: {
 运行命令：
 
 ```bash
-composer require johnlui/aliyun-oss:~3.0
+composer require johnlui/aliyun-oss-laravel7:~3.0
 ```
 
 ## 使用（以 Laravel 为例）
