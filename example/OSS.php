@@ -106,7 +106,7 @@ class OSS {
    * 使用外网删除文件
    * @param  string bucket名称
    * @param  string 目标 OSS object 名称
-   * @return boolean 删除是否成功
+   * @return null 无论成功失败，都只返回 null
    */
   public static function publicDeleteObject($bucketName, $ossKey)
   {
@@ -119,7 +119,7 @@ class OSS {
    * 使用阿里云内网删除文件
    * @param  string bucket名称
    * @param  string 目标 OSS object 名称
-   * @return boolean 删除是否成功
+   * @return null 无论成功失败，都只返回 null
    */
   public static function privateDeleteObject($bucketName, $ossKey)
   {

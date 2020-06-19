@@ -1,4 +1,4 @@
-AliyunOSS
+AliyunOSS-Laravel7
 ---------
 
 ```
@@ -10,11 +10,12 @@ AliyunOSS
                     /____/
 ```
 
-AliyunOSS 是阿里云 OSS 官方 SDK 的 Composer 封装，支持任何 PHP 项目，包括 Laravel、Symfony、TinyLara 等等。
+AliyunOSS-Laravel7 是阿里云 OSS 官方 SDK 的 Composer 封装，专供 Laravel 7。
 
 
 ## 更新记录
 
+* 2020-06-19 `Release v3.0.0` v3 发布，专供 Laravel 7
 * 2017-03-08 `Release v2.0.0` v2 发布，在 API 易用性上进行了大量优化
 * 2016-09-12 `Release v1.3.5` 加入文件元信息的设置功能
 * 2016-07-20 `Release v1.3.4` 加入文件元信息的获取功能
@@ -34,7 +35,7 @@ AliyunOSS 是阿里云 OSS 官方 SDK 的 Composer 封装，支持任何 PHP 项
 
 ```json
 require: {
-    "johnlui/aliyun-oss": "~2.0"
+    "johnlui/aliyun-oss": "~3.0"
 }
 ```
 
@@ -45,7 +46,7 @@ require: {
 运行命令：
 
 ```bash
-composer require johnlui/aliyun-oss:~2.0
+composer require johnlui/aliyun-oss:~3.0
 ```
 
 ## 使用（以 Laravel 为例）
@@ -70,20 +71,6 @@ composer require johnlui/aliyun-oss:~2.0
 
 ### 放入自动加载
 
-#### 遵循 psr-0 的项目（如Laravel 4、CodeIgniter、TinyLara）中：
-在 `composer.json` 中 `autoload -> classmap` 处增加配置：
-
-```json
-"autoload": {
-    "classmap": [
-      "app/services"
-    ]
-  }
-```
-然后运行 `composer dump-autoload`。
-
-#### 遵循 psr-4 的项目（如 Laravel 5、Symfony）中：
-
 无需配置，保证目录 `App/Services` 和命名空间 `namespace App\Services;` 一致即可自动加载。
 
 ### 使用
@@ -100,10 +87,6 @@ OSS::publicUpload('bucket', '目标 object 名', '本地文件绝对路径', [
 ```
 
 更多用法等待着你去[发现](https://github.com/johnlui/AliyunOSS/blob/master/example/OSS.php)。
-
-### Symfony 3 用法示例
-
-如果你正在使用基于 Symfony 创建的第三方应用程序，而又恰好不懂命名空间及 Composer 自动加载，那么看下面就知道本库在 Symfony 中的用法了：
 
 #### 构建 Service 文件
 
