@@ -10,12 +10,12 @@ AliyunOSS-Laravel7
                     /____/
 ```
 
-AliyunOSS-Laravel7 是阿里云 OSS 官方 SDK 的 Composer 封装，专供 Laravel 7。
+AliyunOSS-Laravel7 是阿里云 OSS 官方 SDK 的 Composer 封装，专供 Laravel 7 和 Laravel 8。
 
 
 ## 更新记录
 
-* 2020-06-19 `Release v3.0.0` v3 发布，专供 Laravel 7
+* 2020-06-19 `Release v3.0.0` v3 发布，专供 Laravel 7、8
 * 2017-03-08 `Release v2.0.0` v2 发布，在 API 易用性上进行了大量优化
 * 2016-09-12 `Release v1.3.5` 加入文件元信息的设置功能
 * 2016-07-20 `Release v1.3.4` 加入文件元信息的获取功能
